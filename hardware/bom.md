@@ -1,7 +1,5 @@
 # Bill Of Materials
-### [Link to rubric](bomrubric.md)   
-Clicking on the part should take the reader to the item on the intended vendor's website.   
-Student Name: ________________________________
+Clicking on the part should take the reader to the item on the intended vendor's website.
 | Part                                                                                             |Price in CAD|Quantity|Shipping Cost|Duty| Tax |Subtotal Paid|Subtotal propose to order|Expected Arrival Date|
 |--------------------------------------------------------------------------------------------------|------------|--------|-------------|----|-----|-------------|-------------------------|---------------------|
 |[2N4124 PNP Transistor from Parts kit](https://www.onsemi.com/pdf/datasheet/2n4123-d.pdf)         |       0.70 |      1 |             |    |     |        0.70 |                         |          Semester 1 |
@@ -13,7 +11,7 @@ Student Name: ________________________________
 |[SenseHat](https://www.digikey.ca/en/products/detail/raspberry-pi/SENSE-HAT/6196429)              |      43.16 |      1 |             |    |     |       43.16 |                         |          Semester 2 |
 |[Network adapter](https://www.amazon.ca/Cable-Matters-SuperSpeed-Gigabit-Ethernet/dp/B00BBD7NFU)  |      20.99 |      1 |             |    |     |       20.99 |                         |          Semester 2 |
 |[Ethernet cable](https://www.amazon.ca/StarTech-com-Cat5e-Ethernet-Cable1-Snagless/dp/B0002XGHBQ) |       9.49 |      1 |             |    |     |        9.49 |                         |          Semester 2 |
-|*Sensor/Effector*                                                                                 |      *TBD* |      1 |             |    |*TBD*|             |                   *TBD* |      *Reading Week* |
+|[Proximity Sensor](https://www.sparkfun.com/products/15177)                                       |       7.50 |      1 |             |    | 0.98|             |                    8.48 |      *Reading Week* |
 |[Stacking Header](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/1979/6238003) |       4.24 |      1 |             |    | 0.55|             |                    4.79 |      *Reading Week* |
 |[Qwiic socket](https://www.digikey.ca/en/products/detail/sparkfun-electronics/PRT-14417/7652746)  |       0.81 |      1 |             |    | 0.11|             |                    0.92 |      *Reading Week* |
 |[Qwiic Cables](https://www.digikey.ca/en/products/detail/sparkfun-electronics/KIT-15081/9770723)  |      12.88 |      1 |             |    | 1.67|             |                   14.55 |      *Reading Week* |
