@@ -44,6 +44,8 @@ For the project, a custom case was designed to encase the Raspberry Pi along wit
 Case Design: The case was engineered with precision cutouts for mounting the PCB and ensuring secure placement of the Raspberry Pi and sensor. Special attention was given to create holes for board mounting, ensuring a snug and secure fit for the electronics.
 Final Assembly: After designing and fabricating the case, the electronic components were carefully assembled and mounted, with the Raspberry Pi, sensor, and PCB fitting perfectly within the designated spaces.
 This case provided a compact, functional, and secure housing for the hardware, integral to the project's success.
+-
+My laser-cut files can be found here https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/lasercutting/DylanAshtonLC.pdf
 
 ### 2.4 Firmware development and use   
 https://github.com/sparkfun/Qwiic_Proximity_Py --Visit Github for python library and install all dependency drivers along with "sudo pip install sparkfun-qwiic-proximity"
