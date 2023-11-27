@@ -42,36 +42,11 @@ https://github.com/sparkfun/Qwiic_Proximity_Py --Visit Github for python library
 make sure to install sensehat as well. "pip3 install sense-hat"
 in python file -- "import qwiic_proximity" is used to access Qwiic library and "from sense_hat import SenseHat" accesses sensehats library
 
----The trial code can be found at https://github.com/PrototypeZone/hardware-project-DylanAshton2206/tree/main/firmware "VCNL4040.py" ---
-This Python script is designed to interface with a VCNL4040 proximity sensor using a Raspberry Pi with a Sense HAT attachment. The script utilizes the qwiic_proximity library to communicate with the proximity sensor and the sense_hat library to control the Sense HAT's LED matrix.
-Here's a quick overview of its functionality:
-
-Initialization:
-The script initializes the Sense HAT and the VCNL4040 proximity sensor.
-It checks if the proximity sensor is connected correctly and prints a message indicating whether the initialization was successful.
-
-Maximum Proximity Value:
-MAX_PROXIMITY is set to 26,000, which is a cushioned upper limit for the proximity sensor's raw reading. This value is used to normalize the proximity readings.
-
-Color Calculation:
-The get_exponential_color function calculates an RGB color value based on the proximity sensor's reading. It applies an exponential transformation (with an exponent of 0.15) to the proximity value, making the LED color change more sensitive to closer objects.
-The resulting color ranges from green (object is far away) to red (object is close), with intermediate values represented by varying shades between green and red.
-
-Main Loop:
-In an infinite loop, the script reads the current proximity value and the ambient light level from the sensor.
-It prints these values to the console for monitoring.
-It then calculates the appropriate color based on the proximity value and sets the Sense HAT's LED matrix to this color.
-The loop has a one-second delay to ensure it doesn’t run too fast and consume excessive CPU resources.
-
-Keyboard Interrupt:
-If a KeyboardInterrupt (typically Ctrl+C on the keyboard) is detected, the script clears the Sense HAT's LED matrix and prints a message indicating that the program has stopped.
+The firmware for this project was developed in Python, utilizing the qwiic_proximity library for the VCNL4040 sensor and the sense_hat library for the Raspberry Pi Sense HAT. The complete code and instructions for installation are available on GitHub at ---https://github.com/PrototypeZone/hardware-project-DylanAshton2206/tree/main/firmware "VCNL4040.py"---. This script includes initializing the sensor, reading proximity and ambient light data, and visually representing this data on the Sense HAT's LED matrix.
 
 ## 3.0 Testing and Results   
-After installing all the required libraries, Run VCNL4040.py and if "Proximity sensor initialized." is outputted in the console you have successfully initialized the sensor, and is now ready to be used however you can imagine.
-readings should be between 0 and 25000, for proximity with larger values meaning closer proximity.
-ambient light will react to darkness and flashlights.
-
-If experiencing issues try pip3 instead of pip for installing libraries and check "i2cdetect -y 1" to make sure 0x60 is showing a connection
+After installing the required libraries, running VCNL4040.py successfully initializes the proximity sensor. The sensor's readings range from 0 to 25,000 for proximity, with higher values indicating closer proximity. 
+The ambient light sensor reacts to changes in light levels. In case of issues, use pip3 for library installations and i2cdetect -y 1 to verify the sensor's I2C connection at address 0x60.
 
 ## 4.0 References
 https://github.com/PrototypeZone/hardware-project-DylanAshton2206
