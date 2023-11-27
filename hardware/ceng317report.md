@@ -39,8 +39,11 @@ The entire PCB design and associated files used in this project can be found and
 This phase was pivotal in building a solid hardware foundation, ensuring that all components were properly aligned and functional for the seamless integration of the sensor and firmware development.
 
 ### 2.3 Case design and assembly   
+For the project, a custom case was designed to encase the Raspberry Pi along with the VCNL4040 proximity sensor and the custom PCB. The primary focus of the design was functionality and practicality:
 
-*Replace this text.*   
+Case Design: The case was engineered with precision cutouts for mounting the PCB and ensuring secure placement of the Raspberry Pi and sensor. Special attention was given to create holes for board mounting, ensuring a snug and secure fit for the electronics.
+Final Assembly: After designing and fabricating the case, the electronic components were carefully assembled and mounted, with the Raspberry Pi, sensor, and PCB fitting perfectly within the designated spaces.
+This case provided a compact, functional, and secure housing for the hardware, integral to the project's success.
 
 ### 2.4 Firmware development and use   
 https://github.com/sparkfun/Qwiic_Proximity_Py --Visit Github for python library and install all dependency drivers along with "sudo pip install sparkfun-qwiic-proximity"
