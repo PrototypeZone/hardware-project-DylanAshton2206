@@ -19,8 +19,15 @@ Your target audience is a Computer Engineering Technology student from a differe
 *Replace this text.*   
 
 ### 2.1 Sensor/Effector purchase   
+[https://www.sparkfun.com/products/15177
+purchased from sparkfun with express shipping came the next day international
 
-*Replace this text.*   
+Purchased standoffs, screws, and ](https://www.sparkfun.com/products/15177
+Purchased from SparkFun with express shipping came the next day international
+-
+Purchased standoffs, screws and Qwiic connectors from Digikey - came next day with normal shipping 
+check BOM for a full list of parts (https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md)
+The subtotal is $278, total was past $300 with shipping)
 
 ### 2.2 PCB design and soldering   
 
