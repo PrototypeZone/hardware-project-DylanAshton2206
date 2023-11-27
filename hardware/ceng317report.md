@@ -30,8 +30,13 @@ check BOM for a full list of parts (https://github.com/PrototypeZone/hardware-pr
 The subtotal is $278, total was past $300 with shipping
 
 ### 2.2 PCB design and soldering   
+In this project phase, a custom PCB was meticulously designed using KiCad, emphasizing the integration of the VCNL4040 proximity sensor and the implementation of an I2C bus for effective sensor communication. The PCB layout was carefully planned to include a connection to GPIO pin 17 on the Raspberry Pi, specifically for LED functionality. This setup was crucial for later testing the LED using the gpio_led.py script, which also served as a check for the soldering quality of the components.
 
-*Replace this text.*   
+Following the design process, the PCB was fabricated, and components were precisely soldered onto the board. Special attention was paid to the VCNL4040 sensor and the I2C connections to ensure robust and reliable communication. After soldering, the board underwent rigorous inspection and functional testing, including verifying the I2C bus functionality and the LED operation connected to GPIO pin 17.
+
+The entire PCB design and associated files used in this project can be found and referenced https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/DylanAshton2023-10-16.zip. This repository serves as a detailed resource for understanding the PCB layout and design specifics.
+
+This phase was pivotal in building a solid hardware foundation, ensuring that all components were properly aligned and functional for the seamless integration of the sensor and firmware development.
 
 ### 2.3 Case design and assembly   
 
