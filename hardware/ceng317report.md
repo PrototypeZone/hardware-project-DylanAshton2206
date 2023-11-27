@@ -42,16 +42,20 @@ Here's a quick overview of its functionality:
 Initialization:
 The script initializes the Sense HAT and the VCNL4040 proximity sensor.
 It checks if the proximity sensor is connected correctly and prints a message indicating whether the initialization was successful.
+
 Maximum Proximity Value:
 MAX_PROXIMITY is set to 26,000, which is a cushioned upper limit for the proximity sensor's raw reading. This value is used to normalize the proximity readings.
+
 Color Calculation:
 The get_exponential_color function calculates an RGB color value based on the proximity sensor's reading. It applies an exponential transformation (with an exponent of 0.15) to the proximity value, making the LED color change more sensitive to closer objects.
 The resulting color ranges from green (object is far away) to red (object is close), with intermediate values represented by varying shades between green and red.
+
 Main Loop:
 In an infinite loop, the script reads the current proximity value and the ambient light level from the sensor.
 It prints these values to the console for monitoring.
 It then calculates the appropriate color based on the proximity value and sets the Sense HAT's LED matrix to this color.
 The loop has a one-second delay to ensure it doesn’t run too fast and consume excessive CPU resources.
+
 Keyboard Interrupt:
 If a KeyboardInterrupt (typically Ctrl+C on the keyboard) is detected, the script clears the Sense HAT's LED matrix and prints a message indicating that the program has stopped.
 
@@ -64,6 +68,8 @@ If experiencing issues try pip3 instead of pip for installing libraries and chec
 
 ## 4.0 References
 https://github.com/PrototypeZone/hardware-project-DylanAshton2206
+-
 https://github.com/sparkfun/Qwiic_Proximity_Py
+-
 https://www.sparkfun.com/products/15177
 
