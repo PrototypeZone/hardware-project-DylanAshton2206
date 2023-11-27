@@ -24,8 +24,7 @@ purchased from sparkfun with express shipping came the next day international
 
 Purchased standoffs, screws, and (https://www.sparkfun.com/products/15177
 Purchased from SparkFun with express shipping came the next day international
--
-Purchased standoffs, screws and Qwiic connectors from Digikey - came next day with normal shipping 
+Purchased standoffs, screws and Qwiic connectors from Digikey came next day with normal shipping 
 check BOM for a full list of parts (https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md)
 The subtotal is $278, total was past $300 with shipping
 
