@@ -11,8 +11,35 @@ Your target audience is a Computer Engineering Technology student from a differe
 [4.0 References](#40-references)  
 
 ## 1.0 Introduce the Broadcom development platform and exisiting functionality   
+###1.1 Overview of Broadcom Development Platform
+The Broadcom development platform, exemplified by the Raspberry Pi, offers a versatile and powerful environment for a wide range of projects. Known for its robust processing capabilities, the platform typically includes Broadcom's ARM-based CPUs, essential for handling complex computations and multitasking. Key features include:
 
-*Replace this text.*   
+Core Components:
+Processor: ARM-based CPUs, offering a balance of performance and power efficiency.
+Communication Modules: Integrated WiFi and Bluetooth for wireless connectivity.
+Interfaces: A variety of I/O options including GPIO pins, USB ports, and HDMI outputs.
+
+###1.2 Existing Functionality and Applications
+The Broadcom platform is renowned for its flexibility and extensive library support, catering to various programming languages such as Python, C++, and Java.
+
+Current Capabilities:
+
+Extensive library support for developing a range of applications.
+Compatibility with various sensors and modules through GPIO and I2C interfaces.
+Support for Linux-based operating systems, providing a rich set of tools and applications.
+Typical Use-Cases:
+
+Ideal for IoT projects, home automation, and educational purposes.
+Used in robotics for controlling sensors and actuators.
+Suitable for building custom embedded systems for specific applications.
+
+###1.3 Development Environment and Tools
+The development environment for the Broadcom platform is diverse, offering various tools and IDEs to suit different programming needs.
+
+Software Tools:
+Raspbian OS: A Debian-based operating system optimized for the Raspberry Pi.
+VNC Viewer: Enables remote desktop access to the Raspberry Pi, allowing developers to work on the platform from any location.
+Integrated Development Environments (IDEs): Support for IDEs like Thonny, Eclipse, and others. 
 
 ## 2.0 Added functionality   
 
