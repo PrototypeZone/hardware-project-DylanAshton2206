@@ -1,4 +1,5 @@
-# Hardware report/Build instructions
+# VCNL4040 Hardware report
+This project showcases the development of a proximity detection system using the Broadcom development platform, centered around a Raspberry Pi and the VCNL4040 proximity sensor. The goal was to design a versatile system capable of accurately sensing proximity and ambient light for applications such as automation and interactive installations. The project involved integrating the sensor with a custom-designed PCB, developed in KiCad and connected via an I2C bus, along with the creation of custom firmware in Python to process and visually represent sensor data using a Raspberry Pi Sense HAT's LED matrix. A custom case was also designed and fabricated to house the components securely. Targeted at students and enthusiasts in Computer Engineering Technology, this report documents the entire development process, from hardware selection and PCB design to software development and system assembly, providing a comprehensive guide for recreating or drawing inspiration from this innovative project.
 ## Table of Contents
 [1.0 Introduction](#10-introduce-the-broadcom-development-platform-and-exisiting-functionality)   
 [2.0 Body](#20-added-functionality)   
@@ -9,7 +10,7 @@
 [3.0 Testing and Results](#30-testing-and-results)   
 [4.0 References](#40-references)  
 
-## 1.0 Introduce the Broadcom development platform and exisiting functionality   
+## 1.0 Introduce the Broadcom development platform and existing functionality   
 ### 1.1 Overview of Broadcom Development Platform
 The Broadcom development platform, exemplified by the Raspberry Pi, offers a versatile and powerful environment for a wide range of projects. Known for its robust processing capabilities, the platform typically includes Broadcom's ARM-based CPUs, essential for handling complex computations and multitasking. Key features include:
 
