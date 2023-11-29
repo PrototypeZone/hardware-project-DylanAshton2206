@@ -41,9 +41,6 @@ VNC Viewer: Enables remote desktop access to the Raspberry Pi, allowing develope
 Integrated Development Environments (IDEs): Support for IDEs like Thonny, Eclipse, and others. 
 
 ## 2.0 Added functionality   
-
-*Replace this text.*   
-
 ### 2.1 Sensor/Effector purchase   
 https://www.sparkfun.com/products/15177
 purchased from sparkfun with express shipping came the next day international
