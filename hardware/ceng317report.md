@@ -1,5 +1,4 @@
 # Hardware report/Build instructions
-Your target audience is a Computer Engineering Technology student from a different college who would like to recreate your project. 
 ## Table of Contents
 [1.0 Introduction](#10-introduce-the-broadcom-development-platform-and-exisiting-functionality)   
 [2.0 Body](#20-added-functionality)   
