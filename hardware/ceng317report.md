@@ -48,11 +48,11 @@ purchased from sparkfun with express shipping came the next day international
 
 Purchased standoffs, screws, and (https://www.sparkfun.com/products/15177
 Purchased from SparkFun with express shipping came the next day international
-Purchased standoffs, screws and Qwiic connectors from Digikey came next day with normal shipping 
+Purchased standoffs, screws, and Qwiic connectors from Digikey came the next day with normal shipping 
 check BOM for a full list of parts (https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md)
 The subtotal is $278, total was past $300 with shipping
 
-I highly reccomend the 1 day shipping as others experienced problems with standard.
+I highly recommend the 1 day shipping as others experienced problems with the standard.
 
 ### 2.2 PCB design and soldering   
 In this project phase, a custom PCB was designed using KiCad, emphasizing the integration of the VCNL4040 proximity sensor and the implementation of an I2C bus for effective sensor communication. The PCB layout was carefully planned to include a connection to GPIO pin 17 on the Raspberry Pi, specifically for LED functionality. This setup was crucial for later testing the LED using the gpio_led.py script, which also served as a check for the soldering quality of the components. 
@@ -64,6 +64,7 @@ Following the design process, the PCB was fabricated, and components were precis
 The entire PCB design and associated files used in this project can be found and referenced https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/DylanAshton2023-10-16.zip. This repository serves as a detailed resource for understanding the PCB layout and design specifics.
 When soldering It was important to make a strong electrical and mechanical connection.
 This phase was pivotal in building a solid hardware foundation, ensuring that all components were properly aligned and functional for the seamless integration of the sensor and firmware development.
+For trouble shooting check https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/README.md
 
 ### 2.3 Case design and assembly   
 For the project, a custom case was designed to encase the Raspberry Pi along with the VCNL4040 proximity sensor and the custom PCB. The primary focus of the design was functionality and practicality:
