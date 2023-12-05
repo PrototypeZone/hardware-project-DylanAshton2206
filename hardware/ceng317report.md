@@ -64,7 +64,7 @@ Following the design process, the PCB was fabricated, and components were precis
 The entire PCB design and associated files used in this project can be found and referenced https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/DylanAshton2023-10-16.zip. This repository serves as a detailed resource for understanding the PCB layout and design specifics.
 When soldering It was important to make a strong electrical and mechanical connection.
 This phase was pivotal in building a solid hardware foundation, ensuring that all components were properly aligned and functional for the seamless integration of the sensor and firmware development.
-For trouble shooting check https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/README.md
+For troubleshooting check https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/README.md
 
 ### 2.3 Case design and assembly   
 For the project, a custom case was designed to encase the Raspberry Pi along with the VCNL4040 proximity sensor and the custom PCB. The primary focus of the design was functionality and practicality:
