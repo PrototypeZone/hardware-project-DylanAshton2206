@@ -59,7 +59,7 @@ In this project phase, a custom PCB was designed using KiCad, emphasizing the in
 
 Following the design process, the PCB was fabricated, and components were precisely soldered onto the board. Special attention was paid to the I2C connections to ensure robust and reliable communication. After soldering, the board underwent rigorous inspection and functional testing, including verifying the I2C bus functionality and the LED operation connected to GPIO pin 17.
 # This PCB is placed between the sense hat and the Raspberry PI 
-![pcbstacking](pcbstacking.png)
+![pcbstacking](pcb/media/pcbstacking.png)
 
 The entire PCB design and associated files used in this project can be found and referenced https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/DylanAshton2023-10-16.zip. This repository serves as a detailed resource for understanding the PCB layout and design specifics.
 When soldering It was important to make a strong electrical and mechanical connection.
