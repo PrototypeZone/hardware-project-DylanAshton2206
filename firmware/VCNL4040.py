@@ -38,7 +38,7 @@ try:
         color = get_exponential_color(proximity)
         sense.clear(color)
 
-        sleep(1)  # Small delay to prevent excessive CPU usage
+        sleep(0.1)  # Small delay to prevent excessive CPU usage
 
 except KeyboardInterrupt:
     sense.clear()  # Clear the LED matrix
