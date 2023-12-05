@@ -1,2 +1,4 @@
-# Firmware directory
-Upload the actual firmware (hardware code), e.g. bme280.c by clicking Add file->Upload files.
+# instructions
+Run this Python code in the Raspberry environment with Thonny IDE
+-Qwiic and Sensehat libraries must be installed first.
+make sure VNCL4040 is connected to the PCB with the Sensehat board connected ontop
