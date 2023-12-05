@@ -11,5 +11,3 @@
 | Sensor/effector name:                |   VNCL4040   |
 | I2C address:                         |    0x60   |
 | A link to where you will buy it from:|       https://www.sparkfun.com/products/15177    |
-## Possible choices:   
-See [Project Introduction](https://github.com/PrototypeZone/ceng317/blob/main/projectintroduction.md)   
