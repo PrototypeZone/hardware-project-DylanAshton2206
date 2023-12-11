@@ -53,18 +53,24 @@ Multimeter: A versatile instrument for measuring voltage, current, and resistanc
 DC Power Supply: Provides stable and adjustable DC power, essential for testing and powering electronic circuits safely during the development and debugging phases.
 
 ## 2.0 Added functionality   
-### 2.1 Sensor/Effector purchase   
-https://www.sparkfun.com/products/15177
-purchased from sparkfun with express shipping came the next day international
+### 2.1 Sensor/Effector Purchase
 
-Purchased standoffs, screws, and (https://www.sparkfun.com/products/15177
-Purchased from SparkFun with express shipping came the next day international
-Purchased standoffs, screws, and Qwiic connectors from Digikey came the next day with normal shipping 
-check BOM for a full list of parts (https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md)
-The subtotal is $278, total was past $300 with shipping
+In this stage of the project, key components were acquired to ensure timely progress and quality results.
 
-I highly recommend the 1-day shipping as others experienced problems with the standard.
+#### Acquisitions:
+- **VCNL4040 Proximity Sensor**: Purchased from [SparkFun](https://www.sparkfun.com/products/15177). Opted for express shipping, which remarkably ensured next-day international delivery.
 
+- **Additional Hardware Components**:
+  - Standoffs, screws, and Qwiic connectors were ordered from Digikey. These items also arrived promptly with normal shipping.
+
+#### Bill of Materials (BOM):
+- For a comprehensive list of all parts used in this project, refer to the BOM available at the [GitHub repository](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md).
+
+#### Budget Considerations:
+- The subtotal for these components was approximately $278, with the total exceeding $300 after including shipping costs.
+
+#### Shipping Recommendation:
+- I highly recommend opting for 1-day shipping. Based on experiences within our project and from others, expedited shipping has proven to be more reliable compared to standard options.
 
 ### 2.2 PCB Design and Soldering
 
