@@ -71,15 +71,14 @@ The Broadcom platform's development environment is multifaceted, offering a rang
 ### 2.1 Sensor/Effector Purchase
 
 In this stage of the project, key components were acquired to ensure timely progress and quality results.
+### Bill of Materials (BOM):
+- For a comprehensive list of all parts used in this project, refer to the BOM available at the [GitHub repository](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md).
 
-#### Acquisitions:
+  #### Acquisitions:
 - **VCNL4040 Proximity Sensor**: Purchased from [SparkFun](https://www.sparkfun.com/products/15177). Opted for express shipping, which remarkably ensured next-day international delivery.
 
 - **Additional Hardware Components**:
   - Standoffs, screws, and Qwiic connectors were ordered from Digikey. These items also arrived promptly with normal shipping.
-
-#### Bill of Materials (BOM):
-- For a comprehensive list of all parts used in this project, refer to the BOM available at the [GitHub repository](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md).
 
 #### Budget Considerations:
 - The subtotal for these components was approximately $278, with the total exceeding $300 after including shipping costs.
