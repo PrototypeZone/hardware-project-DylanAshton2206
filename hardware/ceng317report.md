@@ -152,6 +152,8 @@ To facilitate the firmware development for this project, we utilized Python, lev
   - Complete code and detailed installation instructions are available on GitHub at [VCNL4040.py](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/tree/main/firmware).
   - This script includes initializations for the sensor, methods to read proximity and ambient light data, and functions to visually represent this data on the Sense HAT's LED matrix.
 
+     ![Readings](pcb/media/readings.png)
+
 ### 3.0 Testing and Observations
 
 - **Running the Firmware**:
