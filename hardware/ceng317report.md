@@ -13,44 +13,46 @@ This project showcases the development of a proximity detection system using the
 [3.0 Testing and Results](#30-testing-and-results)   
 [4.0 References](#40-references)  
 
-## 1.0 Introduce the Broadcom development platform and existing functionality   
-### 1.1 Overview of Broadcom Development Platform
-The Broadcom development platform, exemplified by the Raspberry Pi, offers a versatile and powerful environment for a wide range of projects. Known for its robust processing capabilities, the platform typically includes Broadcom's ARM-based CPUs, essential for handling complex computations and multitasking. Key features include:
+---
 
-Core Components:
-Processor: ARM-based CPUs, offering a balance of performance and power efficiency.
-Communication Modules: Integrated WiFi and Bluetooth for wireless connectivity.
-Interfaces: A variety of I/O options including GPIO pins, USB ports, and HDMI outputs.
+## 1.0 Introduction to the Broadcom Development Platform and Existing Functionality
+
+### 1.1 Overview of Broadcom Development Platform
+The Broadcom development platform, prominently represented by the Raspberry Pi, provides a versatile and powerful environment suitable for various projects. Its core features are:
+
+#### Core Components:
+- **Processor**: Utilizes ARM-based CPUs, balancing performance with power efficiency.
+- **Communication Modules**: Includes integrated WiFi and Bluetooth for wireless connectivity.
+- **Interfaces**: Offers a range of I/O options like GPIO pins, USB ports, and HDMI outputs.
 
 ### 1.2 Existing Functionality and Applications
-The Broadcom platform is renowned for its flexibility and extensive library support, catering to various programming languages such as Python, C++, and Java.
+The Broadcom platform is celebrated for its adaptability and extensive support for numerous programming languages, including Python, C++, and Java.
 
-Current Capabilities:
+#### Current Capabilities:
+- Extensive library support for a variety of applications.
+- Compatibility with diverse sensors and modules via GPIO and I2C interfaces.
+- Supports Linux-based operating systems, providing a robust toolkit.
 
-Extensive library support for developing a range of applications.
-Compatibility with various sensors and modules through GPIO and I2C interfaces.
-Support for Linux-based operating systems, providing a rich set of tools and applications.
-Typical Use-Cases:
-
-Ideal for IoT projects, home automation, and educational purposes.
-Used in robotics for controlling sensors and actuators.
-Suitable for building custom embedded systems for specific applications.
+#### Typical Use-Cases:
+- Ideal for IoT projects, home automation, and educational purposes.
+- Frequently used in robotics to control sensors and actuators.
+- Suitable for crafting bespoke embedded systems for specialized applications.
 
 ### 1.3 Development Environment and Tools
-The development environment for the Broadcom platform is diverse, offering various tools and IDEs to suit different programming needs.
+The Broadcom platform's development environment is multifaceted, offering a range of tools and IDEs to cater to different programming needs.
 
-Software Tools:
-Raspbian OS: A Debian-based operating system optimized for the Raspberry Pi.
-VNC Viewer: Enables remote desktop access to the Raspberry Pi, allowing developers to work on the platform from any location.
-Integrated Development Environments (IDEs): Support for IDEs like Thonny, Eclipse, and others. 
+#### Software Tools:
+- **Raspbian OS**: A Debian-based OS optimized for the Raspberry Pi.
+- **VNC Viewer**: Facilitates remote desktop access to the Raspberry Pi.
+- **Integrated Development Environments (IDEs)**: Supports IDEs like Thonny, Eclipse, and more.
 
-Hardware Tools:
-Sense HAT for Raspberry Pi: An add-on board for Raspberry Pi, featuring an LED matrix, joystick, and multiple sensors like temperature, humidity, pressure, and orientation sensors, useful for interactive projects and data logging.
-Laser Cutter: Provided by the school, used for precision cutting of materials such as wood, plastic, and fabric, ideal for creating custom enclosures or parts for Raspberry Pi projects.
-PCB Maker: Also provided by the school, this device is used to manufacture Printed Circuit Boards (PCBs), allowing the creation of custom circuit designs for interfacing with the Raspberry Pi.
-Soldering Iron and Solder: Essential for electronics projects, used to solder components onto PCBs or other interfaces to ensure secure electrical connections.
-Multimeter: A versatile instrument for measuring voltage, current, and resistance, crucial for troubleshooting and testing circuits in Raspberry Pi projects.
-DC Power Supply: Provides stable and adjustable DC power, essential for testing and powering electronic circuits safely during the development and debugging phases.
+#### Hardware Tools:
+- **Sense HAT for Raspberry Pi**: An add-on board with an LED matrix, joystick, and various sensors.
+- **Laser Cutter**: For precision cutting of materials, provided by the school.
+- **PCB Maker**: Used for creating custom PCBs, available through school resources.
+- **Soldering Iron and Solder**: Essential for securing electrical connections in electronics projects.
+- **Multimeter**: Measures voltage, current, and resistance; key for troubleshooting.
+- **DC Power Supply**: Provides stable, adjustable DC power during development and debugging.
 
 ## 2.0 Added functionality   
 ### 2.1 Sensor/Effector Purchase
