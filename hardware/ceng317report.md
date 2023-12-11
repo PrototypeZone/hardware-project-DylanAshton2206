@@ -65,27 +65,42 @@ The subtotal is $278, total was past $300 with shipping
 
 I highly recommend the 1-day shipping as others experienced problems with the standard.
 
-### 2.2 PCB design and soldering   
-In this project phase, a custom PCB was designed using KiCad, emphasizing the integration of the VCNL4040 proximity sensor and the implementation of an I2C bus for effective sensor communication. The PCB layout was carefully planned to include a connection to GPIO pin 17 on the Raspberry Pi, specifically for LED functionality. This setup was crucial for later testing the LED using the gpio_led.py script, which also served as a check for the soldering quality of the components. 
 
-Following the design process, the PCB was fabricated, and components were precisely soldered onto the board. Special attention was paid to the I2C connections to ensure robust and reliable communication. After soldering, the board underwent rigorous inspection and functional testing, including verifying the I2C bus functionality and the LED operation connected to GPIO pin 17.
-# This PCB is placed between the sense hat and the Raspberry PI 
-![pcbstacking](pcb/media/pcbstacking.png)
+### 2.2 PCB Design and Soldering
 
-The entire PCB design and associated files used in this project can be found and referenced https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/DylanAshton2023-10-16.zip. This repository serves as a detailed resource for understanding the PCB layout and design specifics.
-When soldering It was important to make a strong electrical and mechanical connection.
-This phase was pivotal in building a solid hardware foundation, ensuring that all components were properly aligned and functional for the seamless integration of the sensor and firmware development.
+In this project phase, a custom PCB was designed using KiCad, with a focus on integrating the VCNL4040 proximity sensor and implementing an I2C bus for effective sensor communication. The PCB layout was planned to include a connection to GPIO pin 17 on the Raspberry Pi for LED functionality. This was crucial for testing the LED using the `gpio_led.py` script, which also served as a quality check for soldering.
 
-For troubleshooting check https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/README.md
+#### PCB Fabrication and Soldering:
+- After designing, the PCB was fabricated and components were precisely soldered onto the board.
+- Special attention was given to the I2C connections to ensure robust communication.
+- Post-soldering, the board was rigorously inspected and functionally tested, including verifying I2C bus functionality and LED operation connected to GPIO pin 17.
 
-### 2.3 Case design and assembly   
-For the project, a custom case was designed to encase the Raspberry Pi along with the VCNL4040 proximity sensor and the custom PCB. The primary focus of the design was functionality and practicality:
+#### PCB Placement:
+- This PCB is placed between the Sense HAT and the Raspberry Pi.
+  
+  ![PCB Stacking](pcb/media/pcbstacking.png)
 
-Case Design: The case was engineered with precision cutouts for mounting the PCB and ensuring secure placement of the Raspberry Pi and sensor. Special attention was given to creating holes for board mounting, ensuring a snug and secure fit for the electronics.
-Final Assembly: After designing and fabricating the case, the electronic components were carefully assembled and mounted, with the Raspberry Pi, sensor, and PCB fitting perfectly within the designated spaces.
-This case provided a compact, functional, and secure housing for the hardware, integral to the project's success.
+#### PCB Design Files:
+- The entire PCB design and associated files are available at [this GitHub repository](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/DylanAshton2023-10-16.zip).
+- The repository provides detailed insights into the PCB layout and design specifics.
+- Important: Ensure strong electrical and mechanical connections when soldering.
+- For troubleshooting, check the [README](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/README.md) on GitHub.
 
-My laser-cut files can be found here https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/lasercutting/DylanAshtonLC.pdf
+### 2.3 Case Design and Assembly
+
+For the project, a custom case was designed to encase the Raspberry Pi, the VCNL4040 proximity sensor, and the custom PCB. The focus was on functionality and practicality.
+
+#### Case Design:
+- Engineered with precision cutouts for mounting the PCB and ensuring secure placement of the Raspberry Pi and sensor.
+- Special attention to board mounting holes for a snug fit.
+
+#### Final Assembly:
+- Post-design and fabrication, the electronic components were carefully assembled and mounted within the case.
+
+#### Laser-Cut Files:
+- The laser-cut files for the case are available [here](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/lasercutting/DylanAshtonLC.pdf).
+
+This case provided a compact, functional, and secure housing for the hardware, contributing significantly to the project's success.
 
 ---
 
