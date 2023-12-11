@@ -15,18 +15,19 @@ This project demonstrates the creation of a proximity detection system utilizing
 - The report aims to provide a thorough guide for those looking to replicate or draw inspiration from this project.
 
 ![project](pcb/media/project.png)
-
 ## Table of Contents
-[1.0 Introduction](#10-introduce-the-broadcom-development-platform-and-exisiting-functionality)   
-[2.0 Body](#20-added-functionality)   
-[2.1 Sensor/Effector purchase](#21-sensor-effector-purchase)   
-[2.2 PCB design and soldering](#22-pcb-design-and-soldering)   
-[2.3 Case design and assembly](#23-case-design-and-assembly)   
-[2.4 Firmware development and use](#24-firmware-development-and-use)   
-[3.0 Testing and Results](#30-testing-and-results)   
-[4.0 References](#40-references)  
-
----
+- [1.0 Introduction](#10-introduction-to-the-broadcom-development-platform-and-existing-functionality)
+  - [1.1 Overview of Broadcom Development Platform](#11-overview-of-broadcom-development-platform)
+  - [1.2 Existing Functionality and Applications](#12-existing-functionality-and-applications)
+  - [1.3 Development Environment and Tools](#13-development-environment-and-tools)
+- [2.0 Added Functionality](#20-added-functionality)
+  - [2.1 Sensor/Effector Purchase](#21-sensor-effector-purchase)
+  - [2.2 PCB Design and Soldering](#22-pcb-design-and-soldering)
+  - [2.3 Case Design and Assembly](#23-case-design-and-assembly)
+  - [2.4 Establishing Connection to the Raspberry Pi and Verifying I2C Connectivity](#24-establishing-connection-to-the-raspberry-pi-and-verifying-i2c-connectivity)
+  - [2.5 Firmware Development and Implementation](#25-firmware-development-and-implementation)
+- [3.0 Testing and Observations](#30-testing-and-observations)
+- [4.0 References](#40-references)
 
 ## 1.0 Introduction to the Broadcom Development Platform and Existing Functionality
 
