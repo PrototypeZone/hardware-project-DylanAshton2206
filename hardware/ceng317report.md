@@ -87,30 +87,58 @@ This case provided a compact, functional, and secure housing for the hardware, i
 
 My laser-cut files can be found here https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/lasercutting/DylanAshtonLC.pdf
 
+---
+
 ### 2.4 Establishing Connection to the Raspberry Pi and Verifying I2C Connectivity
+
 To initiate the connection with the Raspberry Pi and verify the I2C connection, follow these steps:
-Connecting the VNCL4040 Sensor: Attach the VNCL4040 sensor to your custom-made PCB using the Qwiic connector. This step integrates the sensor with your Raspberry Pi setup.
 
-Powering the Raspberry Pi: Use a USB-C cable to power the Raspberry Pi. Additionally, connect the Raspberry Pi to your PC using an Ethernet cable. This establishes a network connection between the two devices.
+#### Connecting the VNCL4040 Sensor:
+- Attach the VNCL4040 sensor to your custom-made PCB using the Qwiic connector. This step integrates the sensor with your Raspberry Pi setup.
 
-Remote Access via VNC Viewer: On your PC, open the VNC Viewer application. Connect to the Raspberry Pi using the IP address 169.254.0.2. You will need to enter the username and password specific to your Raspberry Pi to gain access.
+#### Powering the Raspberry Pi:
+- Use a USB-C cable to power the Raspberry Pi. Additionally, connect the Raspberry Pi to your PC using an Ethernet cable. This establishes a network connection between the two devices.
 
-Verifying the I2C Connection:
-Once connected, open the Raspberry Pi's console.
-Type the command i2cdetect -y 1 and execute it. This command scans the I2C bus for devices.
-If you see the address 0x60 in the output, it indicates a successful connection to the VNCL4040 sensor. This is a positive sign that your project setup is correctly configured and nearly operational.
-![i2c](pcb/media/i2c.png)
+#### Remote Access via VNC Viewer:
+- On your PC, open the VNC Viewer application.
+- Connect to the Raspberry Pi using the IP address `169.254.0.2`. You will need to enter the username and password specific to your Raspberry Pi to gain access.
 
-### 2.5 Firmware development and use   
-https://github.com/sparkfun/Qwiic_Proximity_Py --Visit Github for python library and install all dependency drivers along with "sudo pip install sparkfun-qwiic-proximity"
-make sure to install sensehat as well. "pip3 install sense-hat"
-in python file -- "import qwiic_proximity" is used to access Qwiic library and "from sense_hat import SenseHat" accesses sensehats library
+#### Verifying the I2C Connection:
+- Once connected, open the Raspberry Pi's console.
+- Type the command `i2cdetect -y 1` and execute it. This command scans the I2C bus for devices.
+- If you see the address `0x60` in the output, it indicates a successful connection to the VNCL4040 sensor. This is a positive sign that your project setup is correctly configured and nearly operational.
 
-The firmware for this project was developed in Python, utilizing the qwiic_proximity library for the VCNL4040 sensor and the sense_hat library for the Raspberry Pi Sense HAT. The complete code and instructions for installation are available on GitHub at ---https://github.com/PrototypeZone/hardware-project-DylanAshton2206/tree/main/firmware "VCNL4040.py"---. This script includes initializing the sensor, reading proximity and ambient light data, and visually representing this data on the Sense HAT's LED matrix.
+![I2C Connection](pcb/media/i2c.png)
 
-## 3.0 Testing and Results   
-After installing the required libraries, running VCNL4040.py successfully initializes the proximity sensor. The sensor's readings range from 0 to 25,000 for proximity, with higher values indicating closer proximity. 
-The ambient light sensor reacts to changes in light levels. In case of issues, use pip3 for library installations and i2cdetect -y 1 to verify the sensor's I2C connection at address 0x60.
+---
+
+### 2.5 Firmware Development and Implementation
+
+To facilitate the firmware development for this project, we utilized Python, leveraging specific libraries for interfacing with the hardware components:
+
+- **Installing Necessary Libraries**:
+  - Visit the GitHub repository at [SparkFun Qwiic Proximity Python Library](https://github.com/sparkfun/Qwiic_Proximity_Py) to access the Python library for the VCNL4040 sensor. Install all the required dependency drivers using the command: `sudo pip install sparkfun-qwiic-proximity`.
+  - For the Sense HAT, install its library using `pip3 install sense-hat`.
+
+- **Python Script Setup**:
+  - In your Python script, include the line `import qwiic_proximity` to utilize the Qwiic library functionalities for the VCNL4040 sensor.
+  - Access the Sense HAT's library by including `from sense_hat import SenseHat`.
+
+- **Firmware Overview**:
+  - The firmware, primarily developed in Python, integrates the `qwiic_proximity` library for the VCNL4040 sensor and the `sense_hat` library for the Raspberry Pi Sense HAT.
+  - Complete code and detailed installation instructions are available on GitHub at [VCNL4040.py](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/tree/main/firmware).
+  - This script includes initializations for the sensor, methods to read proximity and ambient light data, and functions to visually represent this data on the Sense HAT's LED matrix.
+
+### 3.0 Testing and Observations
+
+- **Running the Firmware**:
+  - After installing the required libraries, execute the `VCNL4040.py` script. This will initialize the proximity sensor and start data acquisition.
+  - The sensor's proximity readings range from 0 to 25,000, with higher values indicating closer objects.
+  - The ambient light sensor adapts to varying light levels, providing real-time environmental data.
+
+- **Troubleshooting Tips**:
+  - If you encounter any installation issues, try using `pip3` for library installations. This ensures compatibility with Python 3.
+  - To confirm the sensor's I2C connection, use the command `i2cdetect -y 1`. A successful detection will show the sensor's address as `0x60`, indicating proper connectivity and functionality.
 
 ## 4.0 References
 https://github.com/PrototypeZone/hardware-project-DylanAshton2206
