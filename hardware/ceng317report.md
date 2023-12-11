@@ -1,5 +1,18 @@
-# VCNL4040 Hardware report
-This project showcases the development of a proximity detection system using the Broadcom development platform, centered around a Raspberry Pi and the VCNL4040 proximity sensor. The goal was to design a versatile system capable of accurately sensing proximity and ambient light for applications such as automation and interactive installations. The project involved integrating the sensor with a custom-designed PCB, developed in KiCad and connected via an I2C bus, along with the creation of custom firmware in Python to process and visually represent sensor data using a Raspberry Pi Sense HAT's LED matrix. A custom case was also designed and fabricated to house the components securely. Targeted at students and enthusiasts in Computer Engineering Technology, this report documents the entire development process, from hardware selection and PCB design to software development and system assembly, providing a comprehensive guide for recreating or drawing inspiration from this project.
+# VCNL4040 Hardware Report
+
+This project demonstrates the creation of a proximity detection system utilizing the Broadcom development platform, primarily involving a Raspberry Pi and the VCNL4040 proximity sensor. Our objective was to engineer a system adept at accurately sensing proximity and ambient light, suitable for applications in automation and interactive installations.
+
+## Project Overview
+- **Sensor Integration**: The project included integrating the VCNL4040 sensor with a bespoke PCB, designed in KiCad and connected via an I2C bus.
+- **Custom Firmware Development**: We developed custom firmware in Python, enabling the processing and visual representation of sensor data through the Raspberry Pi Sense HAT's LED matrix.
+- **Case Design and Fabrication**: A tailored case was also designed and produced to house the components securely.
+
+## Target Audience
+- This report is intended for students and enthusiasts in the field of Computer Engineering Technology.
+
+## Report Content
+- It comprehensively documents the entire development process, encompassing hardware selection, PCB design, software development, and system assembly.
+- The report aims to provide a thorough guide for those looking to replicate or draw inspiration from this project.
 
 ![project](pcb/media/project.png)
 
