@@ -1,7 +1,7 @@
 # VCNL4040 Hardware report
 This project showcases the development of a proximity detection system using the Broadcom development platform, centered around a Raspberry Pi and the VCNL4040 proximity sensor. The goal was to design a versatile system capable of accurately sensing proximity and ambient light for applications such as automation and interactive installations. The project involved integrating the sensor with a custom-designed PCB, developed in KiCad and connected via an I2C bus, along with the creation of custom firmware in Python to process and visually represent sensor data using a Raspberry Pi Sense HAT's LED matrix. A custom case was also designed and fabricated to house the components securely. Targeted at students and enthusiasts in Computer Engineering Technology, this report documents the entire development process, from hardware selection and PCB design to software development and system assembly, providing a comprehensive guide for recreating or drawing inspiration from this project.
 
-![pcbstacking](pcb/media/project.png)
+![project](pcb/media/project.png)
 
 ## Table of Contents
 [1.0 Introduction](#10-introduce-the-broadcom-development-platform-and-exisiting-functionality)   
@@ -44,6 +44,14 @@ Raspbian OS: A Debian-based operating system optimized for the Raspberry Pi.
 VNC Viewer: Enables remote desktop access to the Raspberry Pi, allowing developers to work on the platform from any location.
 Integrated Development Environments (IDEs): Support for IDEs like Thonny, Eclipse, and others. 
 
+Hardware Tools:
+Sense HAT for Raspberry Pi: An add-on board for Raspberry Pi, featuring an LED matrix, joystick, and multiple sensors like temperature, humidity, pressure, and orientation sensors, useful for interactive projects and data logging.
+Laser Cutter: Provided by the school, used for precision cutting of materials such as wood, plastic, and fabric, ideal for creating custom enclosures or parts for Raspberry Pi projects.
+PCB Maker: Also provided by the school, this device is used to manufacture Printed Circuit Boards (PCBs), allowing the creation of custom circuit designs for interfacing with the Raspberry Pi.
+Soldering Iron and Solder: Essential for electronics projects, used to solder components onto PCBs or other interfaces to ensure secure electrical connections.
+Multimeter: A versatile instrument for measuring voltage, current, and resistance, crucial for troubleshooting and testing circuits in Raspberry Pi projects.
+DC Power Supply: Provides stable and adjustable DC power, essential for testing and powering electronic circuits safely during the development and debugging phases.
+
 ## 2.0 Added functionality   
 ### 2.1 Sensor/Effector purchase   
 https://www.sparkfun.com/products/15177
@@ -55,7 +63,7 @@ Purchased standoffs, screws, and Qwiic connectors from Digikey came the next day
 check BOM for a full list of parts (https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/bom.md)
 The subtotal is $278, total was past $300 with shipping
 
-I highly recommend the 1 day shipping as others experienced problems with the standard.
+I highly recommend the 1-day shipping as others experienced problems with the standard.
 
 ### 2.2 PCB design and soldering   
 In this project phase, a custom PCB was designed using KiCad, emphasizing the integration of the VCNL4040 proximity sensor and the implementation of an I2C bus for effective sensor communication. The PCB layout was carefully planned to include a connection to GPIO pin 17 on the Raspberry Pi, specifically for LED functionality. This setup was crucial for later testing the LED using the gpio_led.py script, which also served as a check for the soldering quality of the components. 
@@ -73,13 +81,27 @@ For troubleshooting check https://github.com/PrototypeZone/hardware-project-Dyla
 ### 2.3 Case design and assembly   
 For the project, a custom case was designed to encase the Raspberry Pi along with the VCNL4040 proximity sensor and the custom PCB. The primary focus of the design was functionality and practicality:
 
-Case Design: The case was engineered with precision cutouts for mounting the PCB and ensuring secure placement of the Raspberry Pi and sensor. Special attention was given to create holes for board mounting, ensuring a snug and secure fit for the electronics.
+Case Design: The case was engineered with precision cutouts for mounting the PCB and ensuring secure placement of the Raspberry Pi and sensor. Special attention was given to creating holes for board mounting, ensuring a snug and secure fit for the electronics.
 Final Assembly: After designing and fabricating the case, the electronic components were carefully assembled and mounted, with the Raspberry Pi, sensor, and PCB fitting perfectly within the designated spaces.
 This case provided a compact, functional, and secure housing for the hardware, integral to the project's success.
 
 My laser-cut files can be found here https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/lasercutting/DylanAshtonLC.pdf
 
-### 2.4 Firmware development and use   
+### 2.4 Establishing Connection to the Raspberry Pi and Verifying I2C Connectivity
+To initiate the connection with the Raspberry Pi and verify the I2C connection, follow these steps:
+Connecting the VNCL4040 Sensor: Attach the VNCL4040 sensor to your custom-made PCB using the Qwiic connector. This step integrates the sensor with your Raspberry Pi setup.
+
+Powering the Raspberry Pi: Use a USB-C cable to power the Raspberry Pi. Additionally, connect the Raspberry Pi to your PC using an Ethernet cable. This establishes a network connection between the two devices.
+
+Remote Access via VNC Viewer: On your PC, open the VNC Viewer application. Connect to the Raspberry Pi using the IP address 169.254.0.2. You will need to enter the username and password specific to your Raspberry Pi to gain access.
+
+Verifying the I2C Connection:
+Once connected, open the Raspberry Pi's console.
+Type the command i2cdetect -y 1 and execute it. This command scans the I2C bus for devices.
+If you see the address 0x60 in the output, it indicates a successful connection to the VNCL4040 sensor. This is a positive sign that your project setup is correctly configured and nearly operational.
+![i2c](pcb/media/i2c.png)
+
+### 2.5 Firmware development and use   
 https://github.com/sparkfun/Qwiic_Proximity_Py --Visit Github for python library and install all dependency drivers along with "sudo pip install sparkfun-qwiic-proximity"
 make sure to install sensehat as well. "pip3 install sense-hat"
 in python file -- "import qwiic_proximity" is used to access Qwiic library and "from sense_hat import SenseHat" accesses sensehats library
