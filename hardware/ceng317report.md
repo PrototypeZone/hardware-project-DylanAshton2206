@@ -89,7 +89,7 @@ In this project phase, a custom PCB was designed using KiCad, with a focus on in
   ![PCB Stacking](pcb/media/pcbstacking.png)
 
 #### PCB Design Files:
-- The entire PCB design and associated files are available at [this GitHub repository](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb).
+- The entire PCB design and associated files are available at [this GitHub repository](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb) zipped.
 - The repository provides detailed insights into the PCB layout and design specifics.
 - Important: Ensure strong electrical and mechanical connections when soldering.
 - For troubleshooting, check the [README](https://github.com/PrototypeZone/hardware-project-DylanAshton2206/blob/main/hardware/pcb/README.md) on GitHub.
